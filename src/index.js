@@ -47,6 +47,8 @@ function onTextAreaInput(event) {
     .then(countries => {
       if (countries.length === 0) {
         Notiflix.Notify.failure('Oops, there is no country with that name');
+        onClearCountryList();
+        onClearCountryInfo();
       }
       return countries;
     })
