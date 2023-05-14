@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  list-style: none;
 }
 
 body {
@@ -17,4 +18,51 @@ body {
   padding: 8px;
   max-width: 320px;
   margin-bottom: 16px;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ==========COUNTRY LIST INFORMATION======== */
+.country-list-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.country-list-flag {
+  margin-right: 10px;
+}
+
+/* ==========COUNTRY INFORMATION======== */
+
+.country-info-head {
+  display: flex;
+  align-items: center;
+}
+
+.country-info-flag {
+  margin-right: 20px;
+}
+
+.country-info-name {
+  font-size: 24px;
+  margin: 0;
+}
+
+.country-info-details {
+  margin-top: 20px;
+}
+
+.country-info-details p {
+  margin: 0;
 }
