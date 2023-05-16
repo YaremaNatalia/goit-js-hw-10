@@ -5,6 +5,8 @@ function onInfo() {
   Notiflix.Notify.info(
     'Too many matches found. Please enter a more specific name.'
   );
+  onClearCountryList();
+  onClearCountryInfo();
 }
 
 function onError() {

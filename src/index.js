@@ -27,20 +27,23 @@ function onTextAreaInput(event) {
   }
   API.fetchCountries(inputValue)
     .then(countries => {
-      if (countries.length > 10) onInfo();
+      if (countries.length > 10) {
+        onInfo();
+      }
       return countries;
     })
     .then(countries => {
       if (countries.length < 10 && countries.length > 1) {
         onClearCountryInfo();
+        onClearCountryList();
         renderCountryList(countries);
       }
       return countries;
     })
     .then(countries => {
       if (countries.length === 1) {
-        renderCountryInfo(countries);
         onClearCountryList();
+        renderCountryInfo(countries);
       }
       return countries;
     })
